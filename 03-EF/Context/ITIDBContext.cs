@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _01_EF.Context
 {
-    class DataBaseContext : DbContext
+    public class DataBaseContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
          => optionsBuilder.UseSqlServer("Server = .; Database = ITI ; Trusted_Connection = true; TrustServerCertificate = true");
